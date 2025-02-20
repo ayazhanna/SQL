@@ -1,3 +1,4 @@
+--Create anonymous block that would trigger too_many_rows error with proper exception handling.
 DECLARE
   v_student_name teacher_1.user_info.first_name%TYPE;
   l_user_id teacher_1.user_info.user_id%type:=10;
