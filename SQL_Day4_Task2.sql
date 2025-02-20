@@ -1,3 +1,4 @@
+--Show a list of teacher and their degrees in full degree name
 SELECT 
   first_name, 
   CASE 
