@@ -1,3 +1,4 @@
+--Create anonymous block that would print for each student - name, surname, max, min and average grade across all courses.
 DECLARE
   CURSOR c_students IS 
     SELECT s.first_name, s.last_name, MAX(sc.final_grade) AS max_grade, 
