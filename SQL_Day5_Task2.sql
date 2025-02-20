@@ -1,3 +1,6 @@
+/*
+Write a query which shows student name, surname, average grade from all subjects, highest average grade in the class, ranking in class
+*/
 SELECT 
   s.first_name, s.last_name, 
   AVG(sc.final_grade) AS avg_grade, 
