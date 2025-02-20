@@ -1,3 +1,7 @@
+/*Create procedure that prints out highest earning employees in each unique job title.
+Required information is: Name,
+Surname, Job Title and Salary.
+*/
 CREATE OR REPLACE PROCEDURE task_11 AS
 BEGIN
   FOR job IN (SELECT job_title FROM jobs_exam)
