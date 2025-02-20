@@ -1,3 +1,4 @@
+--Create anonymous block that would trigger user defined error with proper exception handling.
 DECLARE 
   l_first_name teacher_1.user_info.first_name%TYPE;
   l_user_id teacher_1.user_info.user_id%TYPE := &user_id;
