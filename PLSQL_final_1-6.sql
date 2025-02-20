@@ -1,4 +1,4 @@
----------------------1)
+--1)Create table that stores jobs with values job title, min salary, max salary.
 CREATE TABLE jobs_exam (
   job_title VARCHAR2(50),
   min_salary NUMBER,
@@ -9,7 +9,7 @@ CREATE TABLE jobs_exam (
 ALTER TABLE jobs_exam
 ADD job_id NUMBER PRIMARY KEY;
 
------------------------2)
+--2)Create table that stores employees with first and last name, hire date, email, job id and salary.
 CREATE TABLE employees_exam (
   id NUMBER,
   first_name VARCHAR2(50),
@@ -24,7 +24,7 @@ CREATE TABLE employees_exam (
   CONSTRAINT uk_salary UNIQUE (salary)
 );
 
---3)            Create table that stores job history with employee id, start and end date, job id and salary.
+--3)Create table that stores job history with employee id, start and end date, job id and salary.
 CREATE TABLE history_exam(
 history_id NUMBER,
 id NUMBER,
@@ -41,7 +41,7 @@ CONSTRAINT fk_salary_history_exam FOREIGN KEY (salary) REFERENCES employees_exam
 CONSTRAINT fk_job_id_history_exam FOREIGN KEY (job_id) REFERENCES jobs_exam (job_id)
 );
 
---------------------------------4)
+--4)Create package for exam work.
 
 CREATE OR REPLACE PACKAGE exam_work AS
   PROCEDURE add_job(p_job_title VARCHAR2,
@@ -61,7 +61,7 @@ END exam_work;
 /
 
 
-------------------------------------5)
+--5)Create procedure that generates at least 5 unique rows in jobs table.
 CREATE OR REPLACE PROCEDURE task_5_1
 IS
   TYPE job_array IS VARRAY(10) OF VARCHAR2(100);
@@ -92,7 +92,7 @@ EXECUTE task_5_1;
 
 select* from jobs_exam;
 
--------------------------6)
+--6)Create procedure that generates at least 10 unique rows in employees with different jobs and random salaries within given job range and hire date from 5 to 10 years ago.
 CREATE OR REPLACE PROCEDURE task_6_2
 IS
   TYPE job_array IS VARRAY(10) OF VARCHAR2(100);
