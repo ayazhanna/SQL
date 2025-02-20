@@ -1,3 +1,4 @@
+--To previously created solution add logic that would print out - Elementary school, Middle School,Highschool to each kid.
 DECLARE
 CURSOR c_parent IS
 SELECT parent_id, first_name, last_name FROM teacher_1.parent;
