@@ -1,3 +1,8 @@
+/*Using one of the RANK functions
+Display list of students and their average test grade, show their rank based on average grade
+Best student should be at the top of the list
+*/
+
 SELECT 
   student_id, 
   ROUND(AVG(test_grade),2) AS average_grade,
