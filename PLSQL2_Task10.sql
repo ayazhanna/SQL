@@ -1,3 +1,8 @@
+/*
+Create associative array with neighborghoods of Vilnus and their population (take 10 largest ones). Print out formated output from this
+array. Source for person count:
+https://en.wikipedia.org/wiki/Neighborhoods_of_Vilnius
+*/
 DECLARE
   TYPE t_population 
   IS TABLE OF NUMBER 
