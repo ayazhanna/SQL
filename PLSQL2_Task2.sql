@@ -1,3 +1,4 @@
+--Create anonymous block that divides 128 by 2 till number reaches 1 using while loop, print out all steps in between.
 DECLARE
   num NUMBER := 128;
 BEGIN
