@@ -1,3 +1,4 @@
+--Create anonymous block with cursor and cursor based record, print out class number, lowest grade in each class and students name+surname combined.
 DECLARE
   CURSOR c_classes IS
     SELECT DISTINCT study_class FROM teacher_1.student;  
