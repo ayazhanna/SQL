@@ -1,3 +1,4 @@
+--Create anonymous block that prints out all student average grades. Use cursor and fetch functionality. Format output reasonably.
 DECLARE
   CURSOR c_students IS 
     SELECT s.first_name || ' ' || s.last_name AS full_name, 
