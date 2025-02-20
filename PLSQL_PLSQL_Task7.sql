@@ -1,3 +1,4 @@
+--Create anonymous block that would trigger no_data_found error with proper exception handling.
 DECLARE
   v_first_name VARCHAR(50);
 BEGIN
