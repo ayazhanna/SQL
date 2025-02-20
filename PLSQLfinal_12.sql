@@ -1,3 +1,4 @@
+--Create procedure that prints out currently active employee first and last names with their salaries and sum of all salaries at the end as total.
 CREATE OR REPLACE PROCEDURE task_12 IS
   total_salary NUMBER(10,2) := 0;
 BEGIN
