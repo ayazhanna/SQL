@@ -1,3 +1,4 @@
+--Create anonymous block with courses table record type, print out all courses one by one in console.
 DECLARE
   TYPE t_course IS RECORD(
     course_id teacher_1.course.course_id%type,
