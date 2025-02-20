@@ -1,3 +1,4 @@
+--Create anonymous block that prints out all teachers work email address using loop and fetch.
 select work_email from teacher_1.teacher;
 DECLARE
   --email VARCHAR2(100);
