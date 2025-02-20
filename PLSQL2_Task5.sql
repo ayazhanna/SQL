@@ -1,3 +1,4 @@
+--Create anonymous block that would print out all parents and for each parent print out all kids, print their names in the console and indent students for readability.
 DECLARE
 CURSOR c_parent IS
 SELECT parent_id, first_name, last_name FROM teacher_1.parent;
