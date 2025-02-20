@@ -1,3 +1,7 @@
+/*
+Create procedure that fills job history with data from hire period till today for all employees, jobs should have unique salary and/or job title.
+Job history should have from 1 to 5 entries per employee.
+*/
 CREATE OR REPLACE PROCEDURE task_7
 IS
   v_start_date DATE;
