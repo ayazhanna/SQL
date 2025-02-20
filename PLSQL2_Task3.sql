@@ -1,3 +1,4 @@
+--Create anonymous block that prints out all parents names and surnames as a text using for loop.
 DECLARE
   first_name_parent VARCHAR2(40);
   last_name_parent VARCHAR2(40);
